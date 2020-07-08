@@ -1,0 +1,1 @@
+GianTree merupakan produsen pakan ternak berkelanjutan. GianTree memantapkan diri untuk terus berkarya menyelesaikan masalah lingkungan dengan penggunaan bioteknologi yang berdampak nyata bagi sosial berupa peningkatan ekonomi, mendukung ketahanan pangan. Khususnya menjadi yang terdepan sebagai produsen pakan unggas yang berkelanjutan.
