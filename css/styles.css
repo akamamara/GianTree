@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 .full{
     height: 100%;
 }
@@ -56,7 +59,7 @@
     position: relative;
     float: right;
     right: 12%;
-    top: 24%;
+    top: 45%;
     z-index: 2;
 }
 .slogan::after{
@@ -67,7 +70,7 @@
     bottom: 4.5rem;
     display: block;
 
-    width: 32rem;
+    width: 24rem;
     height: 3.6rem;
     background: #6AE977;
 }
@@ -190,7 +193,6 @@
 }
 
 .solusi-content{
-    display: flex;
     justify-content: center;
 }
 
@@ -236,8 +238,8 @@
 }
 
 .content-rectangle-2{
-    width: 22rem;
-    height: 24rem;
+    width: 20rem;
+    height: 22rem;
     background: #6AE977;
     border-radius: 5rem;
     transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
@@ -254,8 +256,8 @@
 }
 
 .content-img-lr img, .content-img-m img{
-    height: 100%;
     width: 100%;
+    height: 100%;
     border-radius: 2.2rem;
     object-fit: cover;
 }
@@ -267,6 +269,11 @@
     position: relative;
     left: 40%;
     z-index: 1;
+}
+
+.content-img-m img{
+    height: 100%;
+    width: 20rem;
 }
 
 .produk-kami {
@@ -342,4 +349,58 @@
     padding-bottom: 2rem;
     margin-top: -12rem;
     z-index: 1;
+}
+
+.eclipse-1{
+    float: left;
+    width: 32rem;
+    height: 32rem;
+    opacity: 0.72;
+    position: absolute;
+    left: -16rem;
+    
+    border: 6rem solid #76FBEB;
+    border-radius: 50%;
+}
+
+.eclipse-2{
+    float: right;
+    width: 32rem;
+    height: 32rem;
+    opacity: 0.72;
+    position: absolute;
+    right: -20rem;
+    
+    border: 6rem solid #76FBEB;
+    border-radius: 50%;
+}
+
+.eclipse-3{
+    float: right;
+    width: 24rem;
+    height: 24rem;
+    opacity: 0.72;
+    position: absolute;
+    right: 56%;
+    margin-top: -5rem;
+    
+    border: 6rem solid #76FBEB;
+    border-radius: 50%;
+}
+
+.eclipse-4{
+    float: right;
+    width: 18rem;
+    height: 18rem;
+    opacity: 0.72;
+    position: absolute;
+    right: 25%;
+    margin-top: 20%;
+    
+    border: 5.2rem solid #76FBEB;
+    border-radius: 50%;
+}
+
+.shadow-1{
+    filter: drop-shadow(.7rem .7rem 1.6rem rgba(0, 0, 0, 0.22));
 }
