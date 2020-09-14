@@ -308,7 +308,7 @@ body{
     border-radius: 2.2rem;
     padding: 4rem;
     color: #F4F9F4;
-    height: 40rem;
+    max-height: 45rem;
 
     margin-top: -26rem;
 }
@@ -365,11 +365,12 @@ body{
 
 .eclipse-2{
     float: right;
-    width: 32rem;
-    height: 32rem;
+    width: 28rem;
+    height: 28rem;
     opacity: 0.72;
     position: absolute;
-    right: -20rem;
+    right: -16rem;
+    margin-top: -12rem;
     
     border: 6rem solid #76FBEB;
     border-radius: 50%;
@@ -399,6 +400,18 @@ body{
     
     border: 5.2rem solid #76FBEB;
     border-radius: 50%;
+}
+
+.rectangle-1{
+    position: absolute;
+    right: -2.2rem;
+    float: right;
+    margin-top: 8rem;
+
+    width: 42rem;
+    height: 16rem;
+    background: #76FBEB;
+    border-radius: 1.8rem;
 }
 
 .shadow-1{
