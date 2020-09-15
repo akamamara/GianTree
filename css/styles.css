@@ -30,6 +30,17 @@ body{
     background-repeat: no-repeat;
 }
 
+.heading-alt{
+    width: 100%; 
+    height: 100vh; 
+    z-index: 0;
+
+    background-image: url('../images/overlay.svg');
+    background-size: cover;
+    background-position-y: -4rem;
+    background-repeat: no-repeat;
+}
+
 .navbar {
     /* background: #F4F9F4; */
     overflow: hidden;
@@ -416,4 +427,87 @@ body{
 
 .shadow-1{
     filter: drop-shadow(.7rem .7rem 1.6rem rgba(0, 0, 0, 0.22));
+}
+
+.produk{
+    margin-top: 7rem;
+    margin-bottom: 14rem;
+}
+
+.produk img{
+    width: 100%;
+    height: 32rem;
+    object-fit: cover;
+    border-radius: 1.8rem;
+}
+
+.produk-desc-1{
+    float: left;
+    text-align: left;
+    padding-top: 13%;
+}
+
+.produk-desc-2{
+    float: right;
+    text-align: left;
+    padding-top: 18%;
+}
+
+.teknologi{
+    background-image: url('../images/bg_v.svg');
+    background-size: fit;
+    background-repeat: repeat-x;
+    background-position-y: 7rem;
+    z-index: -100;
+    
+    width: 100%;
+    height: 100%;
+    
+    margin-bottom: 7rem;
+}
+
+.teknologi h2{
+    margin-bottom: 7rem;
+}
+
+.teknologi img{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 2.2rem;
+}
+
+.teknologi-desc{
+    background: white;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    
+    width: 33%;
+    position: absolute;    
+    bottom: -10rem;
+    right: 14%;
+    z-index: 2;
+}
+
+.teknologi-desc p{
+    position: relative;
+    margin-left: 18%;
+}
+
+.card-desc{
+    padding: 1.6rem;
+}
+
+.card-desc h2{
+    margin: 0;
+}
+
+.team{
+    margin-bottom: 40rem;
+}
+
+.team-content{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
 }

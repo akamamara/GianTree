@@ -1,0 +1,551 @@
+html{
+    overflow-x: hidden;
+}
+
+.hide-mobile{
+    display: none;
+}
+
+.show-mobile{
+    display: block
+}
+
+.shadow-1{
+    filter: drop-shadow(.7rem .7rem 1.6rem rgba(0, 0, 0, 0.22));
+}
+
+.eclipse-1{
+    float: left;
+    width: 22rem;
+    height: 22rem;
+    opacity: 0.72;
+    position: absolute;
+    left: -12rem;
+    
+    border: 6rem solid #76FBEB;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.eclipse-2{
+    float: right;
+    width: 22rem;
+    height: 22rem;
+    opacity: 0.72;
+    position: absolute;
+    right: -16rem;
+    margin-top: -12rem;
+    
+    border: 6rem solid #76FBEB;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.eclipse-3{
+    float: right;
+    width: 24rem;
+    height: 24rem;
+    opacity: 0.72;
+    position: absolute;
+    left: -32%;
+    margin-top: -12%;
+    
+    border: 6rem solid #76FBEB;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.eclipse-4{
+    float: right;
+    width: 18rem;
+    height: 18rem;
+    opacity: 0.72;
+    position: absolute;
+    right: -30%;
+    margin-top: 140%;
+    
+    border: 5.2rem solid #76FBEB;
+    border-radius: 50%;
+}
+
+.rectangle-1{
+    position: absolute;
+    right: -50%;
+    float: right;
+    margin-top: 25%;
+
+    width: 42rem;
+    height: 12rem;
+    background: #76FBEB;
+    border-radius: 1.8rem;
+}
+
+nav{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.nav-content{
+    display: none;
+}
+
+.heading{
+    background-image: url('../images/image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 30%;
+    width: 100%;
+    height: 42rem;
+
+    margin-bottom: 12rem;
+}
+
+.heading::after{
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 42rem; 
+    z-index: 0;
+
+    background-image: url('../images/overlay.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 30%;
+}
+
+.heading-alt{
+    width: 100%;
+    height: 42rem; 
+    z-index: 0;
+
+    background-image: url('../images/overlay.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 30%;
+
+    margin-bottom: 7rem;
+}
+
+.slogan-content{
+    float: right;
+    z-index: 2;
+
+    position: relative;
+    bottom: -22rem;
+    right: 10%;
+}
+
+.slogan-content::after{
+    content: '';
+    position: relative;
+    z-index: -1;
+    left: 10rem;
+    bottom: 4rem;
+    display: block;
+
+    width: 16rem;
+    height: 3.2rem;
+    background: #6AE977;
+}
+
+.masalah{
+    margin-top: 7rem;
+}
+
+.masalah-content{
+    margin-top: 2rem;
+}
+
+.showup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.showup p{
+    text-align: center;
+}
+
+.showup-circle{
+    border-radius: 50%;
+    background: #6AE977;
+    width: 15rem;
+    height: 15rem;
+}
+
+.showup-circle img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.showup-detail{
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: 100%;
+    position: relative;
+    margin-top: -8rem;
+
+}
+
+.showup-detail-alt{
+    text-align: center;
+}
+
+.solusi-content{
+    justify-content: center;
+}
+
+.solusi-content p {
+    margin-top: 2.2rem;
+}
+
+.solusi-heading{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.content-left, .content-right, .content-middle {
+    width: 22rem;
+    height: 100%;
+    text-align: center;
+}
+
+/* .content-left, .content-right{
+    position: relative;
+    top: 7rem;
+} */
+.content-left{
+    margin-right: 6%;
+}
+
+.content-middle{
+    margin-right: 15%;
+}
+
+.content-middle p{
+    position: relative;
+    left: 40%;
+}
+
+.content-rectangle-1{
+    width: 16rem;
+    height: 16rem;
+    background: #46AE83;
+    border-radius: 4rem;
+    transform: matrix(-0.97, -0.26, -0.26, 0.97, 0, 0);
+    z-index: -1;
+}
+
+.content-rectangle-2{
+    width: 20rem;
+    height: 22rem;
+    background: #6AE977;
+    border-radius: 5rem;
+    transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
+    z-index: -1;
+}
+
+.content-img-lr{
+    width: 15rem;
+    height: 15rem;
+    z-index: 1;
+    margin-top: -40%;
+    position: relative;
+    left: 20%;
+}
+
+.content-img-lr img, .content-img-m img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2.2rem;
+    object-fit: cover;
+}
+
+.content-img-m{
+    width: 100%;
+    height: 100%;
+    margin-top: -15rem;
+    position: relative;
+    left: 40%;
+    z-index: 1;
+}
+
+.content-img-m img{
+    height: 100%;
+    width: 20rem;
+}
+
+.produk-kami {
+    background-image: url('../images/bg_v.svg');
+    background-repeat: repeat-x;
+    background-size: fill;
+    background-position: 0% 0%;
+
+    width: 100%;
+    height: 100%;
+
+    margin-top: 21rem;
+    padding-bottom: 36rem;
+}
+
+.produk-title{
+    position: relative;
+    top: -14rem;
+    margin-bottom: -7rem;
+}
+
+.produk-desc{
+    max-width: calc(100% - 3rem);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.teknologi{
+    background-image: url('../images/bg_v.svg');
+    background-size: fit;
+    background-repeat: repeat-x;
+    background-position-y: 7rem;
+    z-index: -100;
+    
+    width: 100%;
+    height: 100%;
+    
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.teknologi h2{
+    margin-bottom: 7rem;
+}
+
+.teknologi img{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 2.2rem;
+}
+
+.teknologi-desc{
+    background: white;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    margin-top: 2rem;
+    
+    z-index: 2;
+}
+
+.teknologi-desc p{
+    position: relative;
+    margin-left: 18%;
+}
+
+.card-alt{
+    width: calc(100% - 1.5rem);
+    
+    border-radius: 2rem;
+    background-color:#F4F9F4;
+    color: #46AE83;
+    font-weight: 800;
+}
+
+.card-alt img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 2rem;
+    z-index: -10;
+}
+
+.card-btn{
+    max-width: calc(100% - 1.5rem);
+    
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    padding: .5rem 2rem 1rem 2rem;
+}
+
+.card-btn h5{
+    margin: 0;
+}
+
+.card-btn img{
+    width: 3.2rem;
+    height: 3.2rem;
+    float: right;
+    z-index: 1;
+    position: relative;
+    top: 5%
+}
+
+.pencapaian{
+    background-image: url('../images/4.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 2.2rem;
+    padding: 4rem;
+    color: #F4F9F4;
+    max-height: 45rem;
+
+    margin-top: -26rem;
+}
+
+.pencapaian-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+footer{
+    background-image: url('../images/overlay_footer.svg');
+    background-position: center;
+    background-repeat: repeat-x;
+    
+    width: 100%;
+    height: 100%;
+    padding-top: 15rem;
+}
+
+footer p{
+    margin-bottom: 0;
+}
+
+.footer-content{
+    margin-top: 2rem;
+}
+
+.copyright{
+    background-image: url('../images/curve.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20rem;
+    
+    color: #F4F9F4;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 2rem;
+    margin-top: -18rem;
+    z-index: 1;
+}
+
+.produk{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.produk img{
+    width: 100%;
+    height: 32rem;
+    object-fit: cover;
+    border-radius: 1.8rem;
+}
+
+.produk-desc-1{
+    float: left;
+    text-align: left;
+    padding-top: 13%;
+}
+
+.produk-desc-2{
+    float: right;
+    text-align: left;
+    padding-top: 18%;
+}
+
+@media (min-width: 750px){
+    .heading::after, .heading{
+        height: 100vh; 
+    }
+
+    .heading-alt{
+        height: 82vh;
+        background-position-y: -18vh;
+    }
+
+    .slogan-content{
+        bottom: -32rem;
+    }
+    
+    .slogan-content::after{
+        width: 24rem;
+    }
+
+    .eclipse-1{
+        float: left;
+        width: 28rem;
+        height: 28rem;
+
+        position: absolute;
+        left: -rem;
+        
+        border: 6rem solid #76FBEB;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    
+    .eclipse-2{
+        width: 28rem;
+        height: 28rem;
+
+        right: -20rem;
+    }
+
+    .eclipse-3{
+        width: 24rem;
+        height: 24rem;
+        
+        position: absolute;
+        left: 20%;
+        margin-top: -5rem;
+        
+        border: 6rem solid #76FBEB;
+    }
+    
+    .eclipse-4{
+        width: 18rem;
+        height: 18rem;
+
+        position: absolute;
+        right: 25%;
+        margin-top: 20%;
+        
+        border: 5.2rem solid #76FBEB;
+    }
+
+    .rectangle-1{
+        right: -2.2rem;
+        margin-top: 8rem;
+    
+        width: 42rem;
+        height: 16rem;
+    }
+
+    .hide-mobile{
+        display: block;
+    }
+
+    .show-mobile{
+        display: none;
+    }
+
+    .produk{
+        margin-top: 14rem;
+    }
+
+    .teknologi-desc{
+        float:right;
+        position: absolute;
+        bottom: 0;
+    }
+}
