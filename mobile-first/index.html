@@ -11,50 +11,95 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/script.js"></script>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
-    <header class='heading'>
-        <nav>
-            <div class="container">
-                <div class="nav-logo">
-                    <img src="./images/logo.svg" alt="Logo GianTree">
-                </div>
-                <div class="nav-content">
-                    <ul class='navbar-list'>
-                        <li class='navbar-item'>
-                            <a href="#">Beranda</a>
-                        </li>
-                        <li class='navbar-item'>
-                            <a href="#">Dampak</a>
-                        </li>
-                        <li class='navbar-item'>
-                            <a href="#">Produk</a>
-                        </li>
-                        <li class='navbar-item'>
-                            <a href="#">Tentang</a>
-                        </li>
-                        <li class='navbar-item'>
-                            <a href="#">Hubungi Kami</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <nav class='top-nav'>
         <div class="container">
-            <div class="slogan-content">
+            <a href="javascript:void(0);" class="icon show-mobile shadow-1" onclick="myFunction()">
+                <i class="fa fa-bars" style='font-size: 2.4rem'></i>
+            </a>
+            <img src="./images/logo.svg" alt="Logo GianTree">
+            
+            <div class="nav-content" id='nav-content'>
+                <div class="container">
+                <a href="javascript:void(0);" class="icon-1 show-mobile shadow-1" onclick="myFunction()">
+                    <i class="fa fa-times" style='font-size: 2.4rem'></i>
+                </a>
+                </div>
+                <ul class='navbar-list'>
+                    <a href="#">
+                        <li class='navbar-item'>
+                            Beranda
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class='navbar-item'>
+                            Dampak
+                        </li>
+                    </a>
+                    <a href="produk.html">
+                        <li class='navbar-item'>
+                            Produk
+                        </li>
+                    </a>
+                    <a href="tentang-kami.html">
+                        <li class='navbar-item'>
+                            Tentang
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <ul class='navbar-list-desktop'>
+                <a href="#">
+                    <li class='navbar-item'>
+                        Beranda
+                    </li>
+                </a>
+                <a href="#">
+                    <li class='navbar-item'>
+                        Dampak
+                    </li>
+                </a>
+                <a href="produk.html">
+                    <li class='navbar-item'>
+                        Produk
+                    </li>
+                </a>
+                <a href="tentang-kami.html">
+                    <li class='navbar-item'>
+                        Tentang Kami
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <header class='heading'>
+        <div class="slogan-content">
+            
                 <h1>
                     Produsen<br>
                     Pakan Ternak<br>
                     Berkelanjutan
                 </h1>
-            </div>
+            
         </div>
     </header>
+    <div class="container">
+        <div class="description card">
+            <p>
+                Memantapkan diri untuk terus berkarya menyelesaikan masalah lingkungan dengan penggunaan bioteknologi
+                yang berdampak nyata bagi sosial berupa peningkatan ekonomi, mendukung ketahanan pangan. Khususnya
+                menjadi yang terdepan sebagai produsen pakan unggas yang berkelanjutan.
+            </p>
+        </div>
+    </div>
     <div class="masalah">
         <div class="eclipse-1"></div>
         <div class="container">
@@ -226,18 +271,19 @@
         </div>
     </div>
     <div class="rectangle-1"></div>
-    <div class="pencapaian container shadow-1">
-        <div class="pencapaian-title">
-            <h2>Pencapaian <br> GianTree</h2>
-        </div>
-        <div class="pencapaian-content">
-            <div>
-                <img src="./images/itb-innovation-olympiad-2019.svg" alt="Logo ITB Innovation Olympiad 2019">
-                <h4 style='margin: 0'><b>Juara 1</b></h4>
-                <p>ITB Innovation Olympiad 2019</p>
+    <div class="container">
+        <div class="pencapaian shadow-1">
+            <div class="pencapaian-title">
+                <h2>Pencapaian <br> GianTree</h2>
+            </div>
+            <div class="pencapaian-content">
+                <div>
+                    <img src="./images/itb-innovation-olympiad-2019.svg" alt="Logo ITB Innovation Olympiad 2019">
+                    <h4 style='margin: 0'><b>Juara 1</b></h4>
+                    <p>ITB Innovation Olympiad 2019</p>
+                </div>
             </div>
         </div>
-
     </div>
     <footer>
         <div class="container">
