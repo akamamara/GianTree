@@ -11,7 +11,7 @@ function myFunction() {
 }
 
 const header = document.querySelector('nav');
-const sectionOne = document.querySelector('.heading');
+const sectionOne = document.querySelector('header');
 
 const sectionOneOptions = {
     rootMargin: "-200px 0px 0px 0px"

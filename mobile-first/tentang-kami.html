@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript" src="js/script.js" defer></script>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
@@ -24,22 +26,23 @@
             <a href="javascript:void(0);" class="icon show-mobile shadow-1" onclick="myFunction()">
                 <i class="fa fa-bars" style='font-size: 2.4rem'></i>
             </a>
-            <div class="nav-logo">
+            <a href="index.html">
                 <img src="./images/logo.svg" alt="Logo GianTree">
-            </div>
+            </a>
+
             <div class="nav-content" id='nav-content'>
                 <div class="container">
-                <a href="javascript:void(0);" class="icon-1 show-mobile shadow-1" onclick="myFunction()">
-                    <i class="fa fa-times" style='font-size: 2.4rem'></i>
-                </a>
+                    <a href="javascript:void(0);" class="icon-1 show-mobile shadow-1" onclick="myFunction()">
+                        <i class="fa fa-times" style='font-size: 2.4rem'></i>
+                    </a>
                 </div>
                 <ul class='navbar-list'>
-                    <a href="#">
+                    <a href="index.html">
                         <li class='navbar-item'>
                             Beranda
                         </li>
                     </a>
-                    <a href="#">
+                    <a href="dampak.html">
                         <li class='navbar-item'>
                             Dampak
                         </li>
@@ -49,24 +52,53 @@
                             Produk
                         </li>
                     </a>
-                    <a href="tentang-kami.html">
+                    <a href="#">
                         <li class='navbar-item'>
                             Tentang
                         </li>
                     </a>
-                    <a href="#">
-                        <li class='navbar-item'>
-                            Hubungi Kami
-                        </li>
-                    </a>
 
+                    <li class="navbar-item">
+                        <a href="#footer">
+                            <button class="button-primary">
+                                Hubungi kami
+                            </button>
+                        </a>
+                    </li>
                 </ul>
             </div>
+            <ul class='navbar-list-desktop'>
+                <a href="index.html">
+                    <li class='navbar-item'>
+                        Beranda
+                    </li>
+                </a>
+                <a href="dampak.html">
+                    <li class='navbar-item'>
+                        Dampak
+                    </li>
+                </a>
+                <a href="produk.html">
+                    <li class='navbar-item'>
+                        Produk
+                    </li>
+                </a>
+                <a href="#">
+                    <li class='navbar-item'>
+                        Tentang Kami
+                    </li>
+                </a>
+                <li class="navbar-item">
+                    <a href="#footer" class="button button-primary">
+                        Hubungi Kami
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
     <header class='heading-alt'>
         <div class="container">
-            <div class="slogan-content" style='margin-top: 3rem;'>
+            <div class="slogan-content" style='margin-top: 3rem;' data-aos="fade-up">
                 <h1>
                     Tentang Kami
                 </h1>
@@ -75,7 +107,7 @@
     </header>
     <div class="produk">
         <div class="eclipse-1" style='transform: translateY(12%) scale(.8);'></div>
-        <div class="row container">
+        <div class="row container" data-aos="fade-up">
             <div class="six columns produk-desc-1">
                 <h2>Mengambil Tantangan</h2>
                 <p>Giantree memantapkan diri untuk terus berkarya menyelesaikan masalah lingkungan dengan penggunaan
@@ -83,7 +115,7 @@
                     pangan. Khususnya Menjadi yang terdepan sebagai produsen pakan unggas yang berkelanjutan.</p>
             </div>
 
-            <div class="six columns shadow-1">
+            <div class="six columns shadow-1" data-aos="fade-up">
                 <img src="./images/3.jpg" alt="Tim GianTree">
             </div>
         </div>
@@ -91,23 +123,23 @@
     <div class="produk">
         <div class="eclipse-2"></div>
         <div class="row container">
-            <div class="six columns shadow-1 hide-mobile">
+            <div class="six columns shadow-1 hide-mobile" data-aos="fade-up">
                 <img src="./images/image2.jpg" alt="Tim GianTree">
             </div>
-            <div class="six columns produk-desc-2">
+            <div class="six columns produk-desc-2" data-aos="fade-up">
                 <h2>Dedikasi</h2>
                 <p>Dedikasi tertinggi juga GianTree berikan untuk terus berinovasi dalam hal teknologi guna menghasilkan
                     produk yang berkualitas, ekonomis, serta meningkatkan perekonomian khususnya di sektor peternakan.
                 </p>
             </div>
-            <div class="six columns shadow-1 show-mobile">
+            <div class="six columns shadow-1 show-mobile" data-aos="fade-up">
                 <img src="./images/image2.jpg" alt="Tim GianTree">
             </div>
         </div>
     </div>
     <div class="team container">
         <div class="card">
-            <div class="card-desc">
+            <div class="card-desc" data-aos="fade-up">
                 <h2>Meet <br>
                     <span style='position: relative; left: 3%'>Our Team</span></h2>
             </div>
@@ -115,7 +147,7 @@
         <div class="row team-content">
             <div class="twelve columns clearfix">
                 <div class="one-third column">
-                    <div class="one-half column showup">
+                    <div class="one-half column showup margin-3" data-aos="fade-up">
                         <div class="showup-circle shadow-1">
                             <img src="./images/novita-hastuti-zen.jpg" alt="Novita Hastuti Zen">
                         </div>
@@ -123,8 +155,13 @@
                             <h5><strong>Novita <br> Hastuti Zen</strong></h5>
                             <p>Chief of Marketing Officer</p>
                         </div>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/novita-hastuti-zen-160136185/" target="_blank">
+                                <i class="fa fa-linkedin-square" aria-hidden="true" style='color: #0e76a8'></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="one-half column showup">
+                    <div class="one-half column showup margin-3" data-aos="fade-up">
                         <div class="showup-circle shadow-1">
                             <img src="./images/abdul-wahid.jpg" alt="Abdul
                         Wahid Al-Khoir">
@@ -133,10 +170,15 @@
                             <h5><strong>Abdul Wahid <br> Al-Khoir</strong></h5>
                             <p>Chief of Executive Officer</p>
                         </div>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/abdul-wahid-al-khoir-500971120/" target="_blank">
+                                <i class="fa fa-linkedin-square" aria-hidden="true" style='color: #0e76a8'></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="one-third column">
-                    <div class="one-half column showup">
+                    <div class="one-half column showup margin-3" data-aos="fade-up">
                         <div class="showup-circle shadow-1">
                             <img src="./images/renard-elyon.png" alt="Renard Elyon">
                         </div>
@@ -144,19 +186,29 @@
                             <h5><strong>Renard <br> Elyon</strong></h5>
                             <p>Research and Development</p>
                         </div>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/renard-elyon-0449131a7/" target="_blank">
+                                <i class="fa fa-linkedin-square" aria-hidden="true" style='color: #0e76a8'></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="one-half column showup">
+                    <div class="one-half column showup margin-3" data-aos="fade-up">
                         <div class="showup-circle shadow-1">
                             <img src="./images/paisal.jpg" alt="Paisal">
                         </div>
                         <div class="showup-detail-alt">
                             <h5><strong>Paisal</strong></h5>
-                            <p>Chief of Finance Officer</p>
+                            <p>Digital Marketing</p>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/paisal-erwani-a5438116a/" target="_blank">
+                                <i class="fa fa-linkedin-square" aria-hidden="true" style='color: #0e76a8'></i>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="one-third column">
-                    <div class="one-half column showup">
+                    <div class="one-half column showup margin-3" data-aos="fade-up">
                         <div class="showup-circle shadow-1">
                             <img src="./images/shafa-dewi-nugroho.jpeg" alt="Shafa Dewi Nugroho">
                         </div>
@@ -165,6 +217,11 @@
                                     <br> Dewi Nugroho</strong></h5>
                             <p>Chief of Finance Officer</p>
                         </div>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/shafa-dewi-nugroho-b613981a4/" target="_blank">
+                                <i class="fa fa-linkedin-square" aria-hidden="true" style='color: #0e76a8'></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -172,11 +229,11 @@
     </div>
     <div class="rectangle-1"></div>
     <div class="container">
-        <div class="pencapaian shadow-1">
-            <div class="pencapaian-title">
+        <div class="pencapaian shadow-1" data-aos="fade-up">
+            <div class="pencapaian-title" data-aos="fade-up">
                 <h2>Pencapaian <br> GianTree</h2>
             </div>
-            <div class="pencapaian-content">
+            <div class="pencapaian-content" data-aos="fade-up">
                 <div>
                     <img src="./images/itb-innovation-olympiad-2019.svg" alt="Logo ITB Innovation Olympiad 2019">
                     <h4 style='margin: 0'><b>Juara 1</b></h4>
@@ -185,22 +242,34 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer id='footer'>
         <div class="container">
             <div class="four columns">
                 <img src="./images/logo.svg" alt="Logo GianTree">
                 <p>Produsen Pakan Ternak Berkelanjutan</p>
+                <div class="social">
+                    <a href="https://www.facebook.com/PakanKaryaAnakBangsa" target="_blank">
+                        <i class="fa fa-facebook-square" aria-hidden="true" style='color: #3b5998;'></i>
+                    </a>
+                    <a href="https://www.instagram.com/giantree_/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/giantree-indonesia-ab163a1b6/" target="_blank">
+                        <i class="fa fa-linkedin-square" aria-hidden="true" style='color: #0e76a8'></i>
+                    </a>
+                </div>
             </div>
             <div class="one columns"></div>
             <div class="four columns footer-content">
-                <h6><b>Hubungi Kami</b></h6>
-                <p>+62888xxxxxxxx</p>
-                <p>giantree@gmail.com</p>
+                <h5><b>Hubungi Kami</b></h5>
+                <p> <i class="fa fa-phone-square" aria-hidden="true" style='
+                    font-size: 3.2rem; margin-right: 0.5rem; color: #1b9b4a; vertical-align: middle;
+                    '></i>
+                    +6282199893144</p>
             </div>
             <div class="four columns footer-content">
-                <h6><b>Lokasi</b></h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat sagittis, arcu velit, ultrices
-                    euismod.</p>
+                <h5><b>Lokasi</b></h5>
+                <p>Jl. Gelap Nyawang No.1, Lb. Siliwangi, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132</p>
             </div>
         </div>
         <div class="copyright">
@@ -209,18 +278,11 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        function myFunction() {
-            var x = document.getElementById("nav-content");
-
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            }
-
-            else {
-                x.style.display = "block";
-            }
-        }
+        AOS.init({
+            duration: 800,
+        });
     </script>
 </body>
 

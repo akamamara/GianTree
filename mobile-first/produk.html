@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript" src="js/script.js" defer></script>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
@@ -24,14 +26,15 @@
             <a href="javascript:void(0);" class="icon show-mobile shadow-1" onclick="myFunction()">
                 <i class="fa fa-bars" style='font-size: 2.4rem'></i>
             </a>
-            <div class="nav-logo">
+            <a href="index.html">
                 <img src="./images/logo.svg" alt="Logo GianTree">
-            </div>
+            </a>
+
             <div class="nav-content" id='nav-content'>
                 <div class="container">
-                <a href="javascript:void(0);" class="icon-1 show-mobile shadow-1" onclick="myFunction()">
-                    <i class="fa fa-times" style='font-size: 2.4rem'></i>
-                </a>
+                    <a href="javascript:void(0);" class="icon-1 show-mobile shadow-1" onclick="myFunction()">
+                        <i class="fa fa-times" style='font-size: 2.4rem'></i>
+                    </a>
                 </div>
                 <ul class='navbar-list'>
                     <a href="index.html">
@@ -44,7 +47,7 @@
                             Dampak
                         </li>
                     </a>
-                    <a href="produk.html">
+                    <a href="#">
                         <li class='navbar-item'>
                             Produk
                         </li>
@@ -54,28 +57,57 @@
                             Tentang
                         </li>
                     </a>
-                    <a href="hubungi.html">
-                        <li class='navbar-item'>
-                            Hubungi Kami
-                        </li>
-                    </a>
 
+                    <li class="navbar-item">
+                        <a href="#footer">
+                            <button class="button-primary">
+                                Hubungi kami
+                            </button>
+                        </a>
+                    </li>
                 </ul>
             </div>
+            <ul class='navbar-list-desktop'>
+                <a href="index.html">
+                    <li class='navbar-item'>
+                        Beranda
+                    </li>
+                </a>
+                <a href="dampak.html">
+                    <li class='navbar-item'>
+                        Dampak
+                    </li>
+                </a>
+                <a href="#">
+                    <li class='navbar-item'>
+                        Produk
+                    </li>
+                </a>
+                <a href="tentang-kami.html">
+                    <li class='navbar-item'>
+                        Tentang Kami
+                    </li>
+                </a>
+                <li class="navbar-item">
+                    <a href="#footer" class="button button-primary">
+                        Hubungi Kami
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
     <header class='heading-alt'>
         <div class="container">
-            <div class="slogan-content" style='margin-top: 3rem;'>
+            <div class="slogan-content" style='margin-top: 3rem;' data-aos="fade-up">
                 <h1>
                     Produk Kami
                 </h1>
             </div>
         </div>
     </header>
-    <div class="produk">
+    <div class="produk" id='pwakan'>
         <div class="eclipse-1" style='transform: translateY(28%);'></div>
-        <div class="row container">
+        <div class="row container" data-aos="fade-up">
             <div class="six columns produk-desc-1">
                 <h2>Pwakan</h2>
                 <p>Pwakan adalah pakan ayam yang berkualitas dan berkelanjutan terbuat dari campuran dedak dengan
@@ -89,9 +121,9 @@
             </div>
         </div>
     </div>
-    <div class="produk">
+    <div class="produk" id='kam-ing-sun'>
         <div class="eclipse-2"></div>
-        <div class="row container">
+        <div class="row container" data-aos="fade-up">
             <div class="six columns shadow-1 hide-mobile">
                 <img src="./images/1.jpg" alt="Kam-ing sun">
             </div>
@@ -108,10 +140,10 @@
     <div class="teknologi">
         <div class="container">
             <div class="eclipse-3" style='z-index: -100; transform: translateY(150%) translateX(30%);'></div>
-            <div class="teknologi-title">
+            <div class="teknologi-title" data-aos="fade-up">
                 <h2>Teknologi <br> Proses GianTree</h2>
             </div>
-            <div class="row teknologi-content shadow-1">
+            <div class="row teknologi-content shadow-1" data-aos="fade-up">
                 <div class="eight columns">
                     <img src="./images/9.JPG" alt="Teknologi Proses GianTree">
                 </div>
@@ -126,22 +158,34 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer id='footer'>
         <div class="container">
             <div class="four columns">
                 <img src="./images/logo.svg" alt="Logo GianTree">
                 <p>Produsen Pakan Ternak Berkelanjutan</p>
+                <div class="social">
+                    <a href="https://www.facebook.com/PakanKaryaAnakBangsa" target="_blank">
+                        <i class="fa fa-facebook-square" aria-hidden="true" style='color: #3b5998;'></i>
+                    </a>
+                    <a href="https://www.instagram.com/giantree_/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/giantree-indonesia-ab163a1b6/" target="_blank">
+                        <i class="fa fa-linkedin-square" aria-hidden="true" style='color: #0e76a8'></i>
+                    </a>
+                </div>
             </div>
             <div class="one columns"></div>
             <div class="four columns footer-content">
-                <h6><b>Hubungi Kami</b></h6>
-                <p>+62888xxxxxxxx</p>
-                <p>giantree@gmail.com</p>
+                <h5><b>Hubungi Kami</b></h5>
+                <p> <i class="fa fa-phone-square" aria-hidden="true" style='
+                    font-size: 3.2rem; margin-right: 0.5rem; color: #1b9b4a; vertical-align: middle;
+                    '></i>
+                    +6282199893144</p>
             </div>
             <div class="four columns footer-content">
-                <h6><b>Lokasi</b></h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat sagittis, arcu velit, ultrices
-                    euismod.</p>
+                <h5><b>Lokasi</b></h5>
+                <p>Jl. Gelap Nyawang No.1, Lb. Siliwangi, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132</p>
             </div>
         </div>
         <div class="copyright">
@@ -150,18 +194,11 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        function myFunction() {
-            var x = document.getElementById("nav-content");
-
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            }
-
-            else {
-                x.style.display = "block";
-            }
-        }
+        AOS.init({
+            duration: 800,
+        });
     </script>
 </body>
 
