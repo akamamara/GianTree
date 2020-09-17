@@ -88,20 +88,24 @@ nav{
 
     width: 100%;
     z-index: 100;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
-.top-nav{
+.nav-scrolled{
     background: #F4F9F4;
     padding-top: 2rem;
     padding-bottom: 2rem;
     filter: drop-shadow(.7rem .7rem 1.6rem rgba(0, 0, 0, 0.22));
 }
 
-/* .top-nav{
+.top-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
     padding-top: 2rem;
     padding-bottom: 2rem;
-} */
+}
 
 .top-nav a.icon {
     background: #1c1c1c;
@@ -135,6 +139,10 @@ nav{
 .top-nav a.icon:hover, .top-nav a.icon-1:hover {
     background: #46AE83;
     color: #1c1c1c;
+}
+
+.top-nav a:hover{
+    font-weight: 800;
 }
 
 .navbar-list-desktop{
@@ -190,6 +198,11 @@ ul{
     color: #1c1c1c;
     text-decoration: none;
     font-size: 2rem;
+}
+
+.nav-content li:hover:nth-child(5){
+    color: #1c1c1c;
+    background: transparent;
 }
 
 .heading{
@@ -299,6 +312,12 @@ ul{
 
 .showup p{
     text-align: center;
+}
+
+.showup-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .showup-circle{
@@ -607,6 +626,32 @@ footer p{
 .team h5{
     margin-top: 8%;
 }
+
+.social{
+    font-size: 3.2rem;
+}
+
+.social i{
+    margin-right: .5rem;
+}
+
+.social a{
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+.social span{
+    font-size: 1.5rem
+}
+
+.fa.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
 @media (min-width: 750px){
     .heading{
         height: 100vh; 
@@ -724,11 +769,24 @@ footer p{
     .team{
         margin-bottom: 44rem;
     }
+    
     .team-content{
         margin-top: 10rem;
     }
 
     .navbar-list-desktop{
         display: flex;
+    }
+
+    .nav-scrolled{
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+
+        height: 7rem;
+    }
+
+    .button{
+        position: relative;
+        top: -12%;
     }
 }

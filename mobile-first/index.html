@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript" src="js/script.js" defer></script>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
@@ -26,12 +27,12 @@
                 <i class="fa fa-bars" style='font-size: 2.4rem'></i>
             </a>
             <img src="./images/logo.svg" alt="Logo GianTree">
-            
+
             <div class="nav-content" id='nav-content'>
                 <div class="container">
-                <a href="javascript:void(0);" class="icon-1 show-mobile shadow-1" onclick="myFunction()">
-                    <i class="fa fa-times" style='font-size: 2.4rem'></i>
-                </a>
+                    <a href="javascript:void(0);" class="icon-1 show-mobile shadow-1" onclick="myFunction()">
+                        <i class="fa fa-times" style='font-size: 2.4rem'></i>
+                    </a>
                 </div>
                 <ul class='navbar-list'>
                     <a href="#">
@@ -54,6 +55,14 @@
                             Tentang
                         </li>
                     </a>
+
+                    <li class="navbar-item">
+                        <a href="#footer">
+                            <button class="button-primary">
+                                Hubungi kami
+                            </button>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <ul class='navbar-list-desktop'>
@@ -77,23 +86,26 @@
                         Tentang Kami
                     </li>
                 </a>
+                <li class="navbar-item">
+                    <a href="#footer" class="button button-primary">
+                        Hubungi Kami
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
     <header class='heading'>
-        <div class="slogan-content">
-            
-                <h1>
-                    Produsen<br>
-                    Pakan Ternak<br>
-                    Berkelanjutan
-                </h1>
-            
+        <div class="slogan-content" data-aos="fade-up">
+            <h1>
+                Produsen<br>
+                Pakan Ternak<br>
+                Berkelanjutan
+            </h1>
         </div>
     </header>
     <div class="container">
-        <div class="description card">
-            <p>
+        <div class="description card" data-aos="fade-up">
+            <p data-aos="fade-up">
                 Memantapkan diri untuk terus berkarya menyelesaikan masalah lingkungan dengan penggunaan bioteknologi
                 yang berdampak nyata bagi sosial berupa peningkatan ekonomi, mendukung ketahanan pangan. Khususnya
                 menjadi yang terdepan sebagai produsen pakan unggas yang berkelanjutan.
@@ -103,11 +115,11 @@
     <div class="masalah">
         <div class="eclipse-1"></div>
         <div class="container">
-            <div class="four columns">
+            <div class="four columns" data-aos="fade-up">
                 <h2>Krisis <br> Sampah Organik</h2>
             </div>
             <div class="eight columns clearfix masalah-content">
-                <div class="one-third column showup">
+                <div class="one-third column showup" data-aos="fade-up">
                     <div class='showup-content'>
                         <div class="showup-circle shadow-1"></div>
                         <div class="showup-detail">
@@ -118,7 +130,7 @@
                         <p>Menghasilkan Sampah 67 ton di tahun 2019</p>
                     </div>
                 </div>
-                <div class="one-third column showup">
+                <div class="one-third column showup" data-aos="fade-up">
                     <div class='showup-content'>
                         <div class="showup-circle shadow-1"></div>
                         <div class="showup-detail">
@@ -129,7 +141,7 @@
                         <p>60% diantaranya adalah Sampah Organik</p>
                     </div>
                 </div>
-                <div class="one-third column showup">
+                <div class="one-third column showup" data-aos="fade-up">
                     <div class='showup-content'>
                         <div class="showup-circle shadow-1"></div>
                         <div class="showup-detail">
@@ -146,14 +158,14 @@
     <div class="masalah">
         <div class="eclipse-2"></div>
         <div class="container">
-            <div class="four columns">
+            <div class="four columns" data-aos="fade-up">
                 <h2>Tantangan <br />
                     Ketahanan Pangan <br />
                     Berkelanjutan</h2>
             </div>
             <div class='eight columns clearfix masalah-content'>
-                <div class="one-third column showup">
-                    <div class="showup-content-alt">
+                <div class="one-third column showup" data-aos="fade-up">
+                    <div class="showup-content">
                         <div class="showup-circle shadow-1">
                             <img src="./images/kerumunan-manusia.jpg" alt="Sekumpulan manusia">
                         </div>
@@ -166,8 +178,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="one-third column showup">
-                    <div class="showup-content-alt">
+                <div class="one-third column showup" data-aos="fade-up">
+                    <div class="showup-content">
                         <div class="showup-circle shadow-1">
                             <img src="./images/ayam.jpg" alt="Sekumpulan unggas">
                         </div>
@@ -180,8 +192,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="one-third column showup">
-                    <div class="showup-content-alt">
+                <div class="one-third column showup" data-aos="fade-up">
+                    <div class="showup-content">
                         <div class="showup-circle shadow-1">
                             <img src="./images/pakan-unggas.jpg" alt="Makanan unggas">
                         </div>
@@ -200,26 +212,26 @@
         <div class="eclipse-3"></div>
         <div class="eclipse-4"></div>
         <div class="container">
-            <div class="solusi-heading">
+            <div class="solusi-heading" data-aos="fade-up">
                 <h2>Solusi Kami</h2>
             </div>
             <div class="row solusi-content">
-                <div class="three columns content-left">
-                    <div class="content-rectangle-1"></div>
+                <div class="three columns content-left" data-aos="fade-up">
+                    <div class="content-rectangle-1 hide-mobile"></div>
                     <div class="content-img-lr shadow-1">
                         <img src="./images/8.jpg" alt="">
                     </div>
                     <p>Sirkular Ekonomi yang diterapkan untuk keberlangsungan bisnis GianTree </p>
                 </div>
-                <div class="three columns content-middle">
-                    <div class="content-rectangle-2"></div>
+                <div class="three columns content-middle" data-aos="fade-up">
+                    <div class="content-rectangle-2 hide-mobile"></div>
                     <div class="content-img-m shadow-1">
                         <img src="./images/image8.png" alt="">
                     </div>
                     <p>Menghasilkan Pakan unggas dengan efisiensi biaya yang lebih ekonomis serta berkelanjutan</p>
                 </div>
-                <div class="three columns content-right">
-                    <div class="content-rectangle-1"></div>
+                <div class="three columns content-right" data-aos="fade-up">
+                    <div class="content-rectangle-1 hide-mobile"></div>
                     <div class="content-img-lr shadow-1">
                         <img src="./images/7.jpg" alt="">
                     </div>
@@ -232,11 +244,11 @@
     <div class="produk-kami">
         <div class="produk-content shadow-1">
             <div class="container">
-                <div class="produk-title">
+                <div class="produk-title" data-aos="fade-up">
                     <h2>Produk Kami</h2>
                 </div>
                 <div class='row'>
-                    <div class='six columns'>
+                    <div class='six columns' data-aos="fade-up">
                         <div class="card-alt" style='margin-right: 1.5rem;'>
                             <img src="./images/pwakan.png" alt="Pwakan">
                             <div class="card-btn">
@@ -250,8 +262,7 @@
                                 jenis Buras</p>
                         </div>
                     </div>
-
-                    <div class='six columns'>
+                    <div class='six columns' data-aos="fade-up">
                         <div class="card-alt" style='margin-right: 1.5rem;'>
                             <img src="./images/kaming-sun.jpg" alt="Kam-ing sun">
                             <div class="card-btn">
@@ -272,11 +283,11 @@
     </div>
     <div class="rectangle-1"></div>
     <div class="container">
-        <div class="pencapaian shadow-1">
-            <div class="pencapaian-title">
+        <div class="pencapaian shadow-1" data-aos="fade-up">
+            <div class="pencapaian-title" data-aos="fade-up">
                 <h2>Pencapaian <br> GianTree</h2>
             </div>
-            <div class="pencapaian-content">
+            <div class="pencapaian-content" data-aos="fade-up">
                 <div>
                     <img src="./images/itb-innovation-olympiad-2019.svg" alt="Logo ITB Innovation Olympiad 2019">
                     <h4 style='margin: 0'><b>Juara 1</b></h4>
@@ -285,22 +296,34 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer id='footer'>
         <div class="container">
             <div class="four columns">
                 <img src="./images/logo.svg" alt="Logo GianTree">
                 <p>Produsen Pakan Ternak Berkelanjutan</p>
+                <div class="social">
+                    <a href="https://www.facebook.com/PakanKaryaAnakBangsa" target="_blank">
+                        <i class="fa fa-facebook-square" aria-hidden="true" style='color: #3b5998;'></i>
+                    </a>
+                    <a href="https://www.instagram.com/giantree_/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/giantree-indonesia-ab163a1b6/" target="_blank">
+                        <i class="fa fa-linkedin-square" aria-hidden="true" style='color: #0e76a8'></i>
+                    </a>
+                </div>
             </div>
             <div class="one columns"></div>
             <div class="four columns footer-content">
-                <h6><b>Hubungi Kami</b></h6>
-                <p>+62888xxxxxxxx</p>
-                <p>giantree@gmail.com</p>
+                <h5><b>Hubungi Kami</b></h5>
+                <p> <i class="fa fa-phone-square" aria-hidden="true" style='
+                    font-size: 3.2rem; margin-right: 0.5rem; color: #1b9b4a; vertical-align: middle;
+                    '></i>
+                    +6282199893144</p>
             </div>
             <div class="four columns footer-content">
-                <h6><b>Lokasi</b></h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat sagittis, arcu velit, ultrices
-                    euismod.</p>
+                <h5><b>Lokasi</b></h5>
+                <p>Jl. Gelap Nyawang No.1, Lb. Siliwangi, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132</p>
             </div>
         </div>
         <div class="copyright">
@@ -309,6 +332,12 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
 </body>
 
 </html>
