@@ -39,18 +39,24 @@ a{
 }
 
 .eclipse-2{
-    float: right;
     width: 22rem;
     height: 22rem;
     opacity: 0.72;
     
-    position: absolute;
-    right: -16rem;
-    margin-top: -12rem;
+    position: relative;
+    right: -30%;
     
     border: 6rem solid #76FBEB;
     border-radius: 50%;
     z-index: -1;
+}
+
+.overflow-eclipse-2{
+    overflow: hidden;
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-top: -12%;
 }
 
 .eclipse-3{
@@ -68,28 +74,44 @@ a{
 }
 
 .eclipse-4{
-    float: right;
     width: 18rem;
     height: 18rem;
     opacity: 0.72;
-    position: absolute;
+
+    /* margin-right: -30%;
+    margin-top: 140%; */
+
+    position: relative;
     right: -30%;
-    margin-top: 140%;
     
     border: 5.2rem solid #76FBEB;
     border-radius: 50%;
 }
 
-.rectangle-1{
-    position: absolute;
-    right: -50%;
+.overflow-eclipse-4{
+    overflow: hidden;
     float: right;
-    margin-top: 25%;
+    position: absolute;
+    right: 0;
+    margin-top: 140%;
+}
+
+.rectangle-1{
+    position: relative;
+    right: -50%;
 
     width: 42rem;
     height: 12rem;
     background: #76FBEB;
     border-radius: 1.8rem;
+}
+
+.overflow-rectangle-1{
+    overflow: hidden;
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-top: 25%;
 }
 
 nav{
@@ -333,11 +355,11 @@ ul{
     content: '';
     position: relative;
     z-index: -1;
-    left: 10rem;
+    left: 9rem;
     bottom: 4rem;
     display: block;
 
-    width: 16rem;
+    width: 16.3rem;
     height: 3.2rem;
     background: #6AE977;
 }
@@ -816,11 +838,11 @@ footer p{
     
     .eclipse-2{
         float: right;
-        position: absolute;
+        position: relative;
+        right: -20rem;
 
         width: 28rem;
         height: 28rem;
-        right: -20rem;
     }
 
     .eclipse-3{
