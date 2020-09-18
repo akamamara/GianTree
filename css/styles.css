@@ -858,22 +858,25 @@ footer p{
     }
     
     .eclipse-4{
-        float: right;
         width: 18rem;
         height: 18rem;
 
-        position: absolute;
-        right: 25%;
-        margin-top: 20%;
+        right: 0;
         
         border: 5.2rem solid #76FBEB;
     }
 
+    .overflow-eclipse-4{
+        right: 25%;
+        margin-top: 20%;
+    }
+
     .rectangle-1{
-        float: right;
         right: -2.2rem;
-        margin-top: 8rem;
-    
+    }
+
+    .overflow-rectangle-1{
+        margin-top: 12%;
         width: 42rem;
         height: 16rem;
     }
