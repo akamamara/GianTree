@@ -1,3 +1,9 @@
+$(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow",function() {
+        $( ".loader-wrapper" ).remove(); 
+    });
+});
+
 function myFunction() {
     var x = document.getElementById("nav-content");
 

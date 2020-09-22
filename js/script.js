@@ -1,6 +1,8 @@
 
 $(window).on("load", function () {
-    $(".loader-wrapper").fadeOut("slow");
+    $(".loader-wrapper").fadeOut("slow",function() {
+        $( ".loader-wrapper" ).remove(); 
+    });
 });
 
 function myFunction() {
