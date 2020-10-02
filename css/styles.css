@@ -142,6 +142,7 @@ nav{
 }
 
 .top-nav img{
+    margin-top: .7%;
     height: 3.5rem;
 }
 
@@ -279,7 +280,7 @@ ul{
 }
 
 .heading{
-    background-image: url('../images/image1.jpg');
+    background-image: url('../images/bg_hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 30%;
@@ -419,6 +420,12 @@ ul{
     text-align: center;
 }
 
+.detail-desc p{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 22ch;
+}
+
 .solusi-content{
     display: flex;
     flex-direction: column;
@@ -502,7 +509,7 @@ ul{
 }
 
 .content-img-m img{
-    height: 100%;
+    height: 25rem;
     width: 20rem;
 }
 
@@ -526,7 +533,7 @@ ul{
 }
 
 .produk-desc{
-    max-width: calc(100% - 3rem);
+    max-width: calc(100%);
     text-align: center;
     margin-top: 2rem;
 }
@@ -571,7 +578,7 @@ ul{
 }
 
 .card-alt{
-    width: calc(100% - 1.5rem);
+    width: calc(100%);
     
     border-radius: 2rem;
     background-color:#F4F9F4;
@@ -609,8 +616,39 @@ ul{
     top: 5%
 }
 
+.testimoni {
+    margin-top: -28rem;
+    margin-bottom: 16rem;
+}
+
+.testimoni-title{
+    margin-bottom: 6rem;
+}
+
+.testimoni p, .produk-kami p{
+    max-width: 44ch;
+    margin: 4rem auto;
+}
+
+.testimoni .overflow-eclipse-2{
+    margin-top: 8rem
+}
+
+.testimoni .card-alt{
+    margin-bottom: 4rem;
+}
+
+
+.testimoni .card-alt img{
+    object-position: 10% 10%;
+}
+
+.pencapaian-wrapper{
+    margin-top: -32rem;
+}
+
 .pencapaian{
-    background-image: url('../images/4.jpg');
+    background-image: url('../images/pencapaian_giantree.jpg');
     background-position: center;
     background-size: cover;
     border-radius: 2.2rem;
@@ -618,7 +656,7 @@ ul{
     color: #F4F9F4;
     max-height: 45rem;
 
-    margin-top: -26rem;
+    margin-top: -8rem;
 }
 
 .pencapaian-content{
@@ -642,6 +680,14 @@ footer p{
     margin-bottom: 0;
 }
 
+footer a{
+    color: #1c1c1c;
+}
+
+footer a:hover{
+    color: #46AE83;
+}
+
 .footer-content{
     margin-top: 2rem;
 }
@@ -652,8 +698,10 @@ footer p{
     z-index: 1;
 
     background-image: url('../images/curve.svg');
+    background-size: cover;
     background-position: right;
-    background-repeat: no-repeat;
+    
+    background-repeat: repeat-x;
     width: 100%;
     height: 18rem;
     
@@ -669,6 +717,7 @@ footer p{
     margin-bottom: 3rem;
 }
 
+
 .produk img{
     width: 100%;
     height: 32rem;
@@ -680,12 +729,15 @@ footer p{
     float: left;
     text-align: left;
     padding-top: 13%;
+    
+    width: 100%;
 }
 
 .produk-desc-2{
     float: right;
     text-align: left;
     padding-top: 18%;
+    width: 100%;
 }
 
 .team{
@@ -726,6 +778,11 @@ footer p{
     -webkit-background-clip: text;
   }
 
+/* .dampak-1, .dampak, .lingkungan, .sosial, .ekonomi{
+    background-attachment: fixed;
+    scroll-snap-type: y mandatory;
+} */
+
 .dampak-1{
     height: 100vh;
     width: 100%;
@@ -733,14 +790,15 @@ footer p{
     background-size: cover;
     background-position: center;
     color: #F4F9F4;
-    z-index: 0;
+    /* z-index: 0; */
+    background-attachment: fixed;
 }
 
 .dampak{
     height: 100vh;
     width: 100%;
     color: #F4F9F4;
-    z-index: -1;
+    /* z-index: 0; */
     padding-bottom: 3rem;
 }
 
@@ -748,6 +806,12 @@ footer p{
     z-index: 10;
     color: #F4F9F4;
     
+}
+
+.dampak-content{
+    float: left;
+    position: absolute;
+    bottom: -100vh;
 }
 
 .dampak .slogan-content::after{
@@ -760,10 +824,7 @@ footer p{
     background: url(../images/lingkungan.jpg);
     background-size: cover;
     background-position: center;
-    
-    display: flex;
-    flex-direction: column-reverse;
-    z-index: -9999;
+    background-attachment: fixed;
 }
 
 .ekonomi{
@@ -771,10 +832,7 @@ footer p{
     background: url(../images/ekonomi.jpg);
     background-size: cover;
     background-position: right;
-
-    display: flex;
-    flex-direction: column-reverse;
-    z-index: -9999;
+    background-attachment: fixed;
 }
 
 .sosial{
@@ -782,10 +840,7 @@ footer p{
     background: url(../images/sosial.jpg);
     background-size: cover;
     background-position: center;
-
-    display: flex;
-    flex-direction: column-reverse;
-    z-index: -9999;
+    background-attachment: fixed;
 }
 
 .showup-detail-alt p{
@@ -950,7 +1005,7 @@ footer p{
     }
 
     .overflow-rectangle-1{
-        margin-top: 12%;
+        margin-top: 24%;
         width: 42rem;
         height: 16rem;
     }
