@@ -143,40 +143,47 @@ nav{
 
 .top-nav img{
     margin-top: .7%;
-    height: 3.5rem;
+    height: 2.2rem;
+    width: 2.2 rem;
 }
 
 .top-nav a.icon {
     background: #1c1c1c;
     float: right;
 
-    width: 4.2rem;
-    height: 3.6rem;
+    width: 3.3rem;
+    height: 2.8rem;
     border-radius: .5rem;
     
     text-align: center;
     color: #F4F9F4;
 
-    padding-top: .7rem;
+    padding: .7rem .3rem;
 }
 
 .top-nav a.icon-1 {
     background: #1c1c1c;
     float: right;
 
-    width: 4.2rem;
-    height: 3.6rem;
+    width: 3.3rem;
+    height: 2.8rem;
     border-radius: .5rem;
     
     text-align: center;
     color: #F4F9F4;
 
-    padding-top: .7rem;
+    padding: .7rem .3rem;
 }
 
 .top-nav .icon-1 i{
     position: relative;
     bottom: .2rem;
+}
+
+.top-nav a img{
+    height: 3rem;
+    margin-top: auto;
+    margin-bottom: -1.7rem;
 }
 
 .top-nav .icon i{
@@ -218,8 +225,13 @@ ul{
     height: 100vh;
 
     position: absolute;
-    left:0;
+    left: 0;
     top: 0;
+
+    padding: 2rem 0 ;
+
+    overflow-y: scroll;
+    z-index: 999;
 }
 
 .nav-content ul{
@@ -229,7 +241,7 @@ ul{
 }
 
 .nav-content li{
-    margin: 0;
+    margin: 0 auto;
     padding: 1.2rem;
     text-align: center;
 }
